@@ -12,6 +12,6 @@ export class UserService {
   ) { }
   // 获取所有用户数据列表(userRepository.query()方法属于typeoram)
   async findAll(): Promise<UserEntity[]> {
-    return await this.userRepository.query('select * from user_info');
+    return await this.userRepository.query('select * from user_entity')
   }
 }
